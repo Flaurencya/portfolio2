@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <style>
+  .header {
+  font-family: 'Pacifico', cursive;
+  color: white; text-shadow: 2px 2px 4px #000000;
+  position:absolute; left:650px; top:40px;
+  font-size: 60px; font-style: italic;
+  }
 /* Style the tab buttons */
 .tablink {
     background-color: #555;
@@ -39,21 +45,20 @@
    <div class = "main"> 
    <img class="background" src="http://beyondwords.life/wp-content/uploads/2016/07/shutterstock_445895539.jpg">
    <div class = "header"> Helina's Makeup Forum </div>
-</div>
-
-<div id="smallBusinesses" class="tabcontent">
+   <div id="smallBusinesses" class="tabcontent">
   <h3>Small Businesses</h3>
   <p>Support smaller companies!</p>
-</div>
+  </div>
 
-<div id="brandName" class="tabcontent">
+  <div id="brandName" class="tabcontent">
   <h3>Brand Names</h3>
   <p>Join the millions of people that love these brands!</p>
-</div>
-<button class="tablink" onclick="openCity('Big Businesses', this, 'purple')">bigBusinesses</button>
-<button class="tablink" onclick="openCity('Small Businesses', this, 'pink')">smallBusinesses</button>
+  </div>
+  <button class="tablink" onclick="openCity('Big Businesses', this, 'purple')">bigBusinesses</button>
+  <button class="tablink" onclick="openCity('Small Businesses', this, 'pink')">smallBusinesses</button>
  </div>
- 
+</div>
+
 <script>
 function openCity(cityName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
