@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<style>
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style each tab content individually */ 
+.smallBusinesses {background-color: pink;}
+.bigBusinesses {background-color: purple;}
+</style>
+
+<body>
+   <div class = "main"> 
+   <img class="background" src="http://beyondwords.life/wp-content/uploads/2016/07/shutterstock_445895539.jpg">
+   <div class = "header"> Helina's Makeup Forum </div>
+</div>
+
+<div id="smallBusinesses" class="tabcontent">
+  <h3>Small Businesses</h3>
+  <p>Support smaller companies!</p>
+</div>
+
+<div id="brandName" class="tabcontent">
+  <h3>Brand Names</h3>
+  <p>Join the millions of people that love these brands!</p>
+</div>
+<button class="tablink" onclick="openCity('Big Businesses', this, 'purple')">bigBusinesses</button>
+<button class="tablink" onclick="openCity('Small Businesses', this, 'pink')">smallBusinesses</button>
+ </div>
+ 
+<script>
+function openCity(cityName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(cityName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
