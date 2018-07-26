@@ -4,6 +4,11 @@
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <style>
+  .background{
+    position: relative;
+    down: 50px;
+    width:100%; height: 550px
+  }
   .header {
   font-family: 'Pacifico', cursive;
   color: white; text-shadow: 2px 2px 4px #000000;
@@ -37,20 +42,18 @@
 }
 
 /* Style each tab content individually */ 
-.smallBusinesses {background-color: pink;}
-.bigBusinesses {background-color: purple;}
+.SmallBusinesses {background-color: pink;}
+.BigBusinesses {background-color: purple;}
 </style>
 
 <body>
    <div class = "main"> 
    <img class="background" src="http://beyondwords.life/wp-content/uploads/2016/07/shutterstock_445895539.jpg">
    <div class = "header"> Helina's Makeup Forum </div>
-   <div id="smallBusinesses" class="tabcontent">
+   <div id="SmallBusinesses" class="tabcontent">
   <h3>Small Businesses</h3>
   <p>Support smaller companies!</p>
-  </div>
-
-  <div id="brandName" class="tabcontent">
+    <div id="brandName" class="tabcontent">
   <h3>Brand Names</h3>
   <p>Join the millions of people that love these brands!</p>
   </div>
@@ -58,6 +61,9 @@
   <button class="tablink" onclick="openCity('Small Businesses', this, 'pink')">smallBusinesses</button>
  </div>
 </div>
+
+  </div>
+
 
 <script>
 function openCity(cityName, elmnt, color) {
