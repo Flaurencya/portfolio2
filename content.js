@@ -6,6 +6,8 @@ function(request, sender, sendResponse) {
       alert(selected);
       selected = document.getElementById("definition").string;
       //inputting the selected word into the API
+      import {define} from 'owlbot-dictionary'
+      define('selected');
       var query = "https://owlbot.info/api/v2/dictionary/"+ selected;
       var request = new XMLHttpRequest();
       request.open('GET', api/v2/dictionary/selected);
