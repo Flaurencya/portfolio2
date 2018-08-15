@@ -1,0 +1,12 @@
+#prints hello world
+print ("Hello, World!")
+answer = input("What inspires you?")
+print(answer, "is what inspires you!")
+answer = input("What do you think about programming so far?")
+print("You think that programming is", answer)
+answer = input("What is your name?")
+print("Hello,", answer, ",happy programming!")
+answer = input("Ask me anything!")
+print("Sorry,", answer, ",I could not find the answer to your question.")
+answer = input("What is your favorite book?")
+print(answer "is an amazing book!")
